@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Shopping List</title>
+</head>
+<body>
+    <form>
+        <input 
+            type="text"
+            name="item"
+            placeholder="Add Item To Shopping List"
+            id="inputName"
+        >
+        <input 
+            type="number"
+            name="quantity"
+            value=0
+            id="inputQuantity"
+            step="10" min="0" max="100"
+        >
+        <!-- <input
+                id="newItem" 
+                type="submit" class='<i class="fas fa-plus"></i>' id="addButton" onclick="addItem(event)"> -->
+                <button type="submit" id="newItem" onclick="addItem(event)"><i class="fas fa-plus"></i></button>
+    </form>
+    <h1>Shopping List:</h1>
+    <ul id="notDone">
+    </ul>
+    <h1>Done:</h1>
+    <button id="list-colapse"><i class="fas fa-bars"></i></button>
+    <ul id="done">
+    </ul>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
